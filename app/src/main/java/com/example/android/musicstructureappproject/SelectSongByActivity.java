@@ -1,14 +1,14 @@
 package com.example.android.musicstructureappproject;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-public class SelectSongBy extends AppCompatActivity {
+public class SelectSongByActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +19,7 @@ public class SelectSongBy extends AppCompatActivity {
         mainMenu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent mainMenuIntent = new Intent(SelectSongBy.this, MainActivity.class);
+                Intent mainMenuIntent = new Intent(SelectSongByActivity.this, MainActivity.class);
                 startActivity(mainMenuIntent);
             }
         });
@@ -28,7 +28,7 @@ public class SelectSongBy extends AppCompatActivity {
         albumsList.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent albumListIntent = new Intent(SelectSongBy.this, AlbumSelect.class);
+                Intent albumListIntent = new Intent(SelectSongByActivity.this, AlbumSelectActivity.class);
                 startActivity(albumListIntent);
             }
         });
@@ -37,7 +37,7 @@ public class SelectSongBy extends AppCompatActivity {
         songList.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent songListIntent = new Intent(SelectSongBy.this, SongSelect.class);
+                Intent songListIntent = new Intent(SelectSongByActivity.this, SongSelectActivity.class);
                 startActivity(songListIntent);
             }
         });
@@ -46,7 +46,7 @@ public class SelectSongBy extends AppCompatActivity {
         songListButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent songListIntent = new Intent(SelectSongBy.this, SongSelect.class);
+                Intent songListIntent = new Intent(SelectSongByActivity.this, SongSelectActivity.class);
                 startActivity(songListIntent);
             }
         });

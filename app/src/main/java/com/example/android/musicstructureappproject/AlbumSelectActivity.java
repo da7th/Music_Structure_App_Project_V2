@@ -1,25 +1,25 @@
 package com.example.android.musicstructureappproject;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-public class SongSelect extends AppCompatActivity {
+public class AlbumSelectActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_song_select);
+        setContentView(R.layout.activity_album_select);
 
         LinearLayout nowPlaying = (LinearLayout) findViewById(R.id.nowPlayingBar);
         nowPlaying.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent toNowPlaying = new Intent(SongSelect.this, NowPlaying.class);
+                Intent toNowPlaying = new Intent(AlbumSelectActivity.this, NowPlayingActivity.class);
                 startActivity(toNowPlaying);
             }
         });
@@ -28,17 +28,17 @@ public class SongSelect extends AppCompatActivity {
         selectCriteria.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent toSelectCriteria = new Intent(SongSelect.this,SelectSongBy.class);
+                Intent toSelectCriteria = new Intent(AlbumSelectActivity.this, SelectSongByActivity.class);
                 startActivity(toSelectCriteria);
             }
         });
 
-        LinearLayout songs = (LinearLayout) findViewById(R.id.songsList);
-        songs.setOnClickListener(new View.OnClickListener() {
+        LinearLayout albums = (LinearLayout) findViewById(R.id.albums);
+        albums.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent playsong = new Intent(SongSelect.this, NowPlaying.class);
-                startActivity(playsong);
+                Intent playAlbum = new Intent(AlbumSelectActivity.this, NowPlayingActivity.class);
+                startActivity(playAlbum);
             }
         });
 
@@ -46,7 +46,7 @@ public class SongSelect extends AppCompatActivity {
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent backToSelect = new Intent(SongSelect.this, SelectSongBy.class);
+                Intent backToSelect = new Intent(AlbumSelectActivity.this, SelectSongByActivity.class);
                 startActivity(backToSelect);
             }
         });

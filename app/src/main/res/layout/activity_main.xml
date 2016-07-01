@@ -5,46 +5,29 @@
     android:layout_height="match_parent"
     android:background="@android:color/white"
     android:orientation="vertical"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:padding="8dp"
     tools:context="com.example.android.musicstructureappproject.MainActivity">
 
     <LinearLayout
         android:id="@+id/nowPlayingBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="@color/colorAccent">
+        android:background="@color/colorAccent"
+        android:orientation="horizontal">
 
         <TextView
+            style="@style/EightDPMarginPadding"
             android:layout_width="0dp"
             android:layout_height="48dp"
-            android:layout_marginBottom="@dimen/activity_vertical_margin"
-            android:layout_marginLeft="@dimen/activity_horizontal_margin"
-            android:layout_marginRight="@dimen/activity_horizontal_margin"
-            android:layout_marginTop="@dimen/activity_vertical_margin"
             android:layout_weight="1"
-            android:paddingBottom="@dimen/activity_vertical_margin"
-            android:paddingLeft="@dimen/activity_horizontal_margin"
-            android:paddingRight="@dimen/activity_horizontal_margin"
-            android:paddingTop="@dimen/activity_vertical_margin"
-            android:text="Now Playing:" />
+            android:text="@string/now_playing" />
 
         <TextView
+            style="@style/EightDPMarginPadding"
             android:layout_width="0dp"
             android:layout_height="48dp"
-            android:layout_marginBottom="@dimen/activity_vertical_margin"
-            android:layout_marginLeft="@dimen/activity_horizontal_margin"
-            android:layout_marginRight="@dimen/activity_horizontal_margin"
-            android:layout_marginTop="@dimen/activity_vertical_margin"
             android:layout_weight="1"
-            android:paddingBottom="@dimen/activity_vertical_margin"
-            android:paddingLeft="@dimen/activity_horizontal_margin"
-            android:paddingRight="@dimen/activity_horizontal_margin"
-            android:paddingTop="@dimen/activity_vertical_margin"
-            android:text="Some Song by Some Singer" />
+            android:text="@string/song_now_playing" />
 
         <ImageView
             android:layout_width="68dp"
@@ -56,17 +39,13 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="The above fields show the audio file that is currently playing or was played last and it takes its information from the nowplaying activity such as album art"/>
-
-
+        android:text="@string/now_playing_view_explanation" />
 
     <TextView
-        android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="This screen will list all the available on device audio files using the Class:MediaStore.audio in terms of all criteria, it can also fetch the details of the file like album art and artist. it might be possible to viest the albums using gridview and the songs using listview"/>
-
-
+        android:layout_marginTop="10dp"
+        android:text="@string/main_library_screen_explanation" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -79,23 +58,17 @@
 
             <TextView
                 android:id="@+id/toAlbumsList"
+                style="@style/EightDPMarginPadding"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="26dp"
-                android:layout_marginLeft="@dimen/activity_horizontal_margin"
-                android:layout_marginRight="@dimen/activity_horizontal_margin"
-                android:layout_marginTop="@dimen/activity_vertical_margin"
                 android:background="@color/colorAccent"
-                android:paddingBottom="@dimen/activity_vertical_margin"
-                android:paddingLeft="@dimen/activity_horizontal_margin"
-                android:paddingRight="@dimen/activity_horizontal_margin"
-                android:paddingTop="@dimen/activity_vertical_margin"
-                android:text="Albums" />
+                android:text="@string/album_tag" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Clicking albums takes you to the Albums select activity, Clicking and album should start playing the whole album."/>
+                android:text="@string/main_library_screen_explanation" />
 
             <LinearLayout
                 android:id="@+id/albums"
@@ -109,46 +82,26 @@
                     android:orientation="horizontal">
 
                     <ImageButton
+                        style="@style/EightDPMarginPadding"
                         android:layout_width="0dp"
                         android:layout_height="88dp"
-                        android:layout_marginBottom="@dimen/activity_vertical_margin"
-                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-                        android:layout_marginRight="@dimen/activity_horizontal_margin"
-                        android:layout_marginTop="@dimen/activity_vertical_margin"
                         android:layout_weight="1"
-                        android:background="@drawable/album_place_holder"
-                        android:paddingBottom="@dimen/activity_vertical_margin"
-                        android:paddingLeft="@dimen/activity_horizontal_margin"
-                        android:paddingRight="@dimen/activity_horizontal_margin"
-                        android:paddingTop="@dimen/activity_vertical_margin" />
+                        android:background="@drawable/album_place_holder" />
 
                     <ImageButton
+                        style="@style/EightDPMarginPadding"
                         android:layout_width="0dp"
                         android:layout_height="88dp"
-                        android:layout_marginBottom="@dimen/activity_vertical_margin"
-                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-                        android:layout_marginRight="@dimen/activity_horizontal_margin"
-                        android:layout_marginTop="@dimen/activity_vertical_margin"
                         android:layout_weight="1"
-                        android:background="@drawable/album_place_holder"
-                        android:paddingBottom="@dimen/activity_vertical_margin"
-                        android:paddingLeft="@dimen/activity_horizontal_margin"
-                        android:paddingRight="@dimen/activity_horizontal_margin"
-                        android:paddingTop="@dimen/activity_vertical_margin" />
+                        android:background="@drawable/album_place_holder" />
 
                     <ImageButton
+                        style="@style/EightDPMarginPadding"
                         android:layout_width="0dp"
                         android:layout_height="88dp"
-                        android:layout_marginBottom="@dimen/activity_vertical_margin"
-                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-                        android:layout_marginRight="@dimen/activity_horizontal_margin"
-                        android:layout_marginTop="@dimen/activity_vertical_margin"
                         android:layout_weight="1"
-                        android:background="@drawable/album_place_holder"
-                        android:paddingBottom="@dimen/activity_vertical_margin"
-                        android:paddingLeft="@dimen/activity_horizontal_margin"
-                        android:paddingRight="@dimen/activity_horizontal_margin"
-                        android:paddingTop="@dimen/activity_vertical_margin" />
+                        android:background="@drawable/album_place_holder" />
+
                 </LinearLayout>
 
                 <LinearLayout
@@ -157,64 +110,38 @@
                     android:orientation="horizontal">
 
                     <ImageButton
+                        style="@style/EightDPMarginPadding"
                         android:layout_width="0dp"
                         android:layout_height="88dp"
-                        android:layout_marginBottom="@dimen/activity_vertical_margin"
-                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-                        android:layout_marginRight="@dimen/activity_horizontal_margin"
-                        android:layout_marginTop="@dimen/activity_vertical_margin"
                         android:layout_weight="1"
-                        android:background="@drawable/album_place_holder"
-                        android:paddingBottom="@dimen/activity_vertical_margin"
-                        android:paddingLeft="@dimen/activity_horizontal_margin"
-                        android:paddingRight="@dimen/activity_horizontal_margin"
-                        android:paddingTop="@dimen/activity_vertical_margin" />
+                        android:background="@drawable/album_place_holder" />
 
                     <ImageButton
+                        style="@style/EightDPMarginPadding"
                         android:layout_width="0dp"
                         android:layout_height="88dp"
-                        android:layout_marginBottom="@dimen/activity_vertical_margin"
-                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-                        android:layout_marginRight="@dimen/activity_horizontal_margin"
-                        android:layout_marginTop="@dimen/activity_vertical_margin"
                         android:layout_weight="1"
-                        android:background="@drawable/album_place_holder"
-                        android:paddingBottom="@dimen/activity_vertical_margin"
-                        android:paddingLeft="@dimen/activity_horizontal_margin"
-                        android:paddingRight="@dimen/activity_horizontal_margin"
-                        android:paddingTop="@dimen/activity_vertical_margin" />
+                        android:background="@drawable/album_place_holder" />
 
                     <ImageButton
+                        style="@style/EightDPMarginPadding"
                         android:layout_width="0dp"
                         android:layout_height="88dp"
-                        android:layout_marginBottom="@dimen/activity_vertical_margin"
-                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-                        android:layout_marginRight="@dimen/activity_horizontal_margin"
-                        android:layout_marginTop="@dimen/activity_vertical_margin"
                         android:layout_weight="1"
-                        android:background="@drawable/album_place_holder"
-                        android:paddingBottom="@dimen/activity_vertical_margin"
-                        android:paddingLeft="@dimen/activity_horizontal_margin"
-                        android:paddingRight="@dimen/activity_horizontal_margin"
-                        android:paddingTop="@dimen/activity_vertical_margin" />
+                        android:background="@drawable/album_place_holder" />
+
                 </LinearLayout>
 
             </LinearLayout>
 
             <TextView
                 android:id="@+id/toSongsList"
+                style="@style/EightDPMarginPadding"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="26dp"
-                android:layout_marginLeft="@dimen/activity_horizontal_margin"
-                android:layout_marginRight="@dimen/activity_horizontal_margin"
-                android:layout_marginTop="@dimen/activity_vertical_margin"
                 android:background="@color/colorAccent"
-                android:paddingBottom="@dimen/activity_vertical_margin"
-                android:paddingLeft="@dimen/activity_horizontal_margin"
-                android:paddingRight="@dimen/activity_horizontal_margin"
-                android:paddingTop="@dimen/activity_vertical_margin"
-                android:text="Songs" />
+                android:text="@string/song_tag" />
 
             <LinearLayout
                 android:id="@+id/playSong"
@@ -228,19 +155,12 @@
                     android:orientation="horizontal">
 
                     <TextView
+                        style="@style/EightDPMarginPadding"
                         android:layout_width="0dp"
                         android:layout_height="36dp"
-                        android:layout_marginBottom="@dimen/activity_vertical_margin"
-                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-                        android:layout_marginRight="@dimen/activity_horizontal_margin"
-                        android:layout_marginTop="@dimen/activity_vertical_margin"
                         android:layout_weight="1"
                         android:background="@color/textSecondary"
-                        android:paddingBottom="@dimen/activity_vertical_margin"
-                        android:paddingLeft="@dimen/activity_horizontal_margin"
-                        android:paddingRight="@dimen/activity_horizontal_margin"
-                        android:paddingTop="@dimen/activity_vertical_margin"
-                        android:text="Now Playing" />
+                        android:text="@string/now_playing" />
 
                     <ImageView
                         android:layout_width="48dp"
@@ -255,19 +175,12 @@
                     android:orientation="horizontal">
 
                     <TextView
+                        style="@style/EightDPMarginPadding"
                         android:layout_width="0dp"
                         android:layout_height="36dp"
-                        android:layout_marginBottom="@dimen/activity_vertical_margin"
-                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-                        android:layout_marginRight="@dimen/activity_horizontal_margin"
-                        android:layout_marginTop="@dimen/activity_vertical_margin"
                         android:layout_weight="1"
                         android:background="@color/textSecondary"
-                        android:paddingBottom="@dimen/activity_vertical_margin"
-                        android:paddingLeft="@dimen/activity_horizontal_margin"
-                        android:paddingRight="@dimen/activity_horizontal_margin"
-                        android:paddingTop="@dimen/activity_vertical_margin"
-                        android:text="Now Playing" />
+                        android:text="@string/now_playing" />
 
                     <ImageView
                         android:layout_width="48dp"
@@ -282,19 +195,12 @@
                     android:orientation="horizontal">
 
                     <TextView
+                        style="@style/EightDPMarginPadding"
                         android:layout_width="0dp"
                         android:layout_height="36dp"
-                        android:layout_marginBottom="@dimen/activity_vertical_margin"
-                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-                        android:layout_marginRight="@dimen/activity_horizontal_margin"
-                        android:layout_marginTop="@dimen/activity_vertical_margin"
                         android:layout_weight="1"
                         android:background="@color/textSecondary"
-                        android:paddingBottom="@dimen/activity_vertical_margin"
-                        android:paddingLeft="@dimen/activity_horizontal_margin"
-                        android:paddingRight="@dimen/activity_horizontal_margin"
-                        android:paddingTop="@dimen/activity_vertical_margin"
-                        android:text="Now Playing" />
+                        android:text="@string/now_playing" />
 
                     <ImageView
                         android:layout_width="48dp"
@@ -309,19 +215,12 @@
                     android:orientation="horizontal">
 
                     <TextView
+                        style="@style/EightDPMarginPadding"
                         android:layout_width="0dp"
                         android:layout_height="36dp"
-                        android:layout_marginBottom="@dimen/activity_vertical_margin"
-                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-                        android:layout_marginRight="@dimen/activity_horizontal_margin"
-                        android:layout_marginTop="@dimen/activity_vertical_margin"
                         android:layout_weight="1"
                         android:background="@color/textSecondary"
-                        android:paddingBottom="@dimen/activity_vertical_margin"
-                        android:paddingLeft="@dimen/activity_horizontal_margin"
-                        android:paddingRight="@dimen/activity_horizontal_margin"
-                        android:paddingTop="@dimen/activity_vertical_margin"
-                        android:text="Now Playing" />
+                        android:text="@string/now_playing" />
 
                     <ImageView
                         android:layout_width="48dp"
@@ -335,19 +234,17 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="This button will take the user back to the select by screen to choose to pick using a different criteria such as playlists or artists etc." />
+                android:text="@string/back_button_explanation" />
 
             <ImageView
                 android:id="@+id/backToSelect"
                 android:layout_width="68dp"
                 android:layout_height="68dp"
-                android:background="@drawable/back_button"
-                android:layout_gravity="center_horizontal"/>
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/back_button" />
 
         </LinearLayout>
 
     </ScrollView>
-
-
 
 </LinearLayout>

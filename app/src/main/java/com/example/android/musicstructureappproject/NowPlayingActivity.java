@@ -1,13 +1,13 @@
 package com.example.android.musicstructureappproject;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-public class NowPlaying extends AppCompatActivity {
+public class NowPlayingActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +18,7 @@ public class NowPlaying extends AppCompatActivity {
         viewAlbums.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent backToAlbums = new Intent(NowPlaying.this,AlbumSelect.class);
+                Intent backToAlbums = new Intent(NowPlayingActivity.this, AlbumSelectActivity.class);
                 startActivity(backToAlbums);
             }
         });
@@ -27,7 +27,7 @@ public class NowPlaying extends AppCompatActivity {
         musicControls.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(NowPlaying.this,"This is where the control buttons are going to be implemented",Toast.LENGTH_LONG).show();
+                Toast.makeText(NowPlayingActivity.this, "This is where the control buttons are going to be implemented", Toast.LENGTH_LONG).show();
             }
         });
 
@@ -35,7 +35,7 @@ public class NowPlaying extends AppCompatActivity {
         viewSongs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent backToSongs = new Intent(NowPlaying.this,SongSelect.class);
+                Intent backToSongs = new Intent(NowPlayingActivity.this, SongSelectActivity.class);
                 startActivity(backToSongs);
             }
         });

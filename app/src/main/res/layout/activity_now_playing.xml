@@ -3,90 +3,69 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimaryLight"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.android.musicstructureappproject.NowPlaying"
-    android:background="@color/colorPrimaryLight">
+    tools:context="com.example.android.musicstructureappproject.NowPlayingActivity">
 
     <TextView
         android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:text="In this activity the music file is played which can be achieved with the classes: mediaplayer , audiomanager"/>
+        android:text="@string/now_playing_view_explanation" />
 
     <ImageView
         android:id="@+id/backToAlbums"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:background="@drawable/album_place_holder"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/album_place_holder" />
 
     <ImageView
         android:id="@+id/musicControlsPlaceHolder"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/music_controls"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="80dp"/>
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/music_controls" />
 
     <TextView
+        style="@style/EightDPMarginPadding"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:layout_marginBottom="@dimen/activity_vertical_margin"
-        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-        android:layout_marginRight="@dimen/activity_horizontal_margin"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:paddingBottom="@dimen/activity_vertical_margin"
-        android:paddingLeft="@dimen/activity_horizontal_margin"
-        android:paddingRight="@dimen/activity_horizontal_margin"
-        android:paddingTop="@dimen/activity_vertical_margin"
-        android:text="Some Song by Some Singer"
+        android:text="@string/song_now_playing"
         android:textAlignment="center"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
         android:background="@color/colorAccent"
-        android:layout_alignParentBottom="true">
+        android:orientation="horizontal">
 
         <TextView
+            style="@style/EightDPMarginPadding"
             android:layout_width="0dp"
             android:layout_height="48dp"
-            android:layout_marginBottom="@dimen/activity_vertical_margin"
-            android:layout_marginLeft="@dimen/activity_horizontal_margin"
-            android:layout_marginRight="@dimen/activity_horizontal_margin"
-            android:layout_marginTop="@dimen/activity_vertical_margin"
             android:layout_weight="1"
-            android:paddingBottom="@dimen/activity_vertical_margin"
-            android:paddingLeft="@dimen/activity_horizontal_margin"
-            android:paddingRight="@dimen/activity_horizontal_margin"
-            android:paddingTop="@dimen/activity_vertical_margin"
-            android:text="Now Playing" />
+            android:text="@string/now_playing" />
 
         <TextView
+            style="@style/EightDPMarginPadding"
             android:layout_width="0dp"
             android:layout_height="48dp"
-            android:layout_marginBottom="@dimen/activity_vertical_margin"
-            android:layout_marginLeft="@dimen/activity_horizontal_margin"
-            android:layout_marginRight="@dimen/activity_horizontal_margin"
-            android:layout_marginTop="@dimen/activity_vertical_margin"
             android:layout_weight="1"
-            android:paddingBottom="@dimen/activity_vertical_margin"
-            android:paddingLeft="@dimen/activity_horizontal_margin"
-            android:paddingRight="@dimen/activity_horizontal_margin"
-            android:paddingTop="@dimen/activity_vertical_margin"
-            android:text="Some Song by Some Singer" />
+            android:text="@string/song_now_playing" />
 
         <TextView
             android:layout_width="120dp"
             android:layout_height="wrap_content"
-            android:text="this button takes the user back to the main lists"
-            android:background="@color/colorPrimaryLight"/>
+            android:background="@color/colorPrimaryLight"
+            android:text="@string/list_button_explanation" />
 
         <ImageView
             android:id="@+id/backToSongsList"

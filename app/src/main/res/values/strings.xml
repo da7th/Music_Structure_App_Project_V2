@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">Music Structure App: Main Library</string>
+    <string name="now_playing">Now Playing:</string>
+    <string name="song_now_playing">Some Song by Some Singer</string>
+    <string name="now_playing_view_explanation">The above fields show the audio file that is currently playing or was played last and it takes its information from the nowplaying activity such as album art</string>
+    <string name="main_library_screen_explanation">This screen will list all the available on device audio files using the Class:MediaStore.audio in terms of all criteria, it can also fetch the details of the file like album art and artist. it might be possible to viest the albums using gridview and the songs using listview</string>
+    <string name="album_tag">Albums</string>
+    <string name="song_tag">Songs</string>
+    <string name="back_button_explanation">This button will take the user back to the select by screen to choose to pick using a different criteria such as playlists or artists etc.</string>
+    <string name="songs_screen_explanation">This screen will list all the available on device audio files using the Class:MediaStore.audio in terms of songs, it can also fetch the details of the file like album art and artist.</string>
+    <string name="criteria_screen_explanation">the above takes the user to the main lists activity, this takes the user to the song list activity, and below to the albums list activity</string>
+    <string name="to_main_view_tag">Back to Main View</string>
+    <string name="now_playing_screen_explanation">In this activity the music file is played which can be achieved with the classes: mediaplayer , audiomanager</string>
+    <string name="list_button_explanation">this button takes the user back to the main lists</string>
+    <string name="album_screen_explanation">This screen will list all the available on device audio files using the Class:MediaStore.audio in terms of albums, it can also fetch the details of the file like album art and artist</string>
+
 </resources>

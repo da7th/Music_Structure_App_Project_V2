@@ -15,13 +15,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".NowPlaying"
+        <activity
+            android:name=".NowPlayingActivity"
             android:label="Now Playing"/>
-        <activity android:name=".SelectSongBy"
+        <activity
+            android:name=".SelectSongByActivity"
             android:label="Select Criteria"/>
-        <activity android:name=".AlbumSelect"
+        <activity
+            android:name=".AlbumSelectActivity"
             android:label="List of Albums"/>
-        <activity android:name=".SongSelect"
+        <activity
+            android:name=".SongSelectActivity"
             android:label="List of Songs"/>
     </application>
 
