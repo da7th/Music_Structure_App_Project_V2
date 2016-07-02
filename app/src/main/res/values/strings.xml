@@ -13,5 +13,8 @@
     <string name="now_playing_screen_explanation">In this activity the music file is played which can be achieved with the classes: mediaplayer , audiomanager</string>
     <string name="list_button_explanation">this button takes the user back to the main lists</string>
     <string name="album_screen_explanation">This screen will list all the available on device audio files using the Class:MediaStore.audio in terms of albums, it can also fetch the details of the file like album art and artist</string>
+    <string name="song_screen_header">List of Songs</string>
+    <string name="album_screen_header">List of Albums</string>
+    <string name="select_criteria_header">Select Section</string>
 
 </resources>

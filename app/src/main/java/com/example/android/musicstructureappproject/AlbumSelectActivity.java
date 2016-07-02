@@ -33,7 +33,7 @@ public class AlbumSelectActivity extends AppCompatActivity {
             }
         });
 
-        LinearLayout albums = (LinearLayout) findViewById(R.id.albums);
+        LinearLayout albums = (LinearLayout) findViewById(R.id.Albums);
         albums.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

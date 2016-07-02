@@ -17,16 +17,20 @@
         </activity>
         <activity
             android:name=".NowPlayingActivity"
-            android:label="Now Playing"/>
+            android:label="@string/now_playing"
+            android:parentActivityName=".MainActivity" />/>
         <activity
             android:name=".SelectSongByActivity"
-            android:label="Select Criteria"/>
+            android:label="@string/select_criteria_header"
+            android:parentActivityName=".MainActivity" />/>
         <activity
             android:name=".AlbumSelectActivity"
-            android:label="List of Albums"/>
+            android:label="@string/album_screen_header"
+            android:parentActivityName=".MainActivity" />/>
         <activity
             android:name=".SongSelectActivity"
-            android:label="List of Songs"/>
+            android:label="@string/song_screen_header"
+            android:parentActivityName=".MainActivity" />/>
     </application>
 
 </manifest>
